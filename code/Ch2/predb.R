@@ -6,7 +6,7 @@ predb <- function(x,k) {
    if (sm >= k2) pred[1] <- 1 else pred[1] <- 0
    if (n-k >= 2) {
       for (i in 2:(n-k)) {
-         sm <- sm + x[i+k-1] - x[i-1] _label~update@
+         sm <- sm + x[i+k-1] - x[i-1]
          if (sm >= k2) pred[i] <- 1 else pred[i] <- 0
       }
    }

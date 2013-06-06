@@ -2,8 +2,8 @@
 # increasing or not, relative to the previous one; output length is 1
 # less than input
 findud <- function(v) {
-   vud <- v[-1] - v[-length(v)] _label~findvud1@
-   return(ifelse(vud > 0,1,-1))  _label~findvud2@
+   vud <- v[-1] - v[-length(v)]
+   return(ifelse(vud > 0,1,-1))
 }
 
 udcorr <- function(x,y) {
