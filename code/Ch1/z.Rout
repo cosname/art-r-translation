@@ -1,0 +1,29 @@
+
+R version 2.12.1 (2010-12-16)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: i686-pc-linux-gnu (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pdf("xh.pdf")  # set graphical output file
+> hist(rnorm(100))  # generate 100 N(0,1) variates and plot their histogram
+> dev.off()  # close the graphical output file
+null device 
+          1 
+> 
+> proc.time()
+   user  system elapsed 
+  0.512   0.020   2.714 
