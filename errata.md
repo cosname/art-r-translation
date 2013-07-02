@@ -2,6 +2,14 @@
 * 33页：最后一段中的`sum(x[i:(i+(k-1))`应为`sum(x[i:(i+(k-1))])`。
 * 45页：最后一段代码的第三行应为`for (gen in c("M","F")) grps[[gen]] <- which(aba[,1]==gen)`。
 
+## 第8章
+* 172页：
+    * 第二行，`setdiff（x,y）`改为`setdiff(x,y)`;
+    * 第四行，`setequal（x,y）`改为`setequal(x,y)`；
+    * 第五行，`c % in % y` 改为`c %in% y`；
+    * 第六行，`choose（x,y）`改为`choose(n,k)`
+
+
 ## 第12章
 * 234页：倒数第二行，“`plot()`的前两个参数指定了`xlim`和`ylim`”是
 原书的表述，但实际上此处有误，因为`plot()`的前两个参数应该是指定了`x`和`y`，
