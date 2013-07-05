@@ -1,4 +1,7 @@
 ## 第2章
+* 29页：书中写道“如果x非空，`seq(x)`与`1:length(x)`的结果相同”，但此处原作者忽略了一种情况（由[@pyloque](https://github.com/pyloque)指出），
+就是当`x`是一个长度为1的向量时，`seq(x)`会生成`1:x`（假设`x`为整数），而不是书中预想的1。在此，译者推荐的方法是用
+`seq_along(x)`来代替`1:length(x)`。
 * 33页：最后一段中的`sum(x[i:(i+(k-1))`应为`sum(x[i:(i+(k-1))])`。
 * 45页：最后一段代码的第三行应为`for (gen in c("M","F")) grps[[gen]] <- which(aba[,1]==gen)`。
 
