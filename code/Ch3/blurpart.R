@@ -7,6 +7,6 @@ blurpart <- function(img,rows,cols,q) {
   lcols <- length(cols)
   newimg <- img
   randomnoise <- matrix(nrow=lrows, ncol=lcols,runif(lrows*lcols))
-  newimg@grey <- (1-q) * img@grey + q * randomnoise
+  newimg@grey[rows, cols] <- (1-q) * img@grey[rows, cols] + q * randomnoise
   return(newimg)
 }
